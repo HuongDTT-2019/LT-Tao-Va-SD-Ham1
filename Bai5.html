@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+             <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+                         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+             <title>Bai5</title>
+</head>
+<body>
+<script >
+let idolName=[ "Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe" , "Regulus"];
+let idolStart=["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major","Leo"];
+let inputName=prompt("Enter the name of idol:");
+function checkStart() {
+    for (let i=0;i<idolName.length;i++){
+        if (inputName==idolName[i]) {
+            idolName[i]=idolStart[i];
+            return idolStart[i];
+        }
+    }
+             return ("not result");
+}
+let result = checkStart(inputName);
+alert(result+" is start of "+inputName);
+</script>
+</body>
+</html>
